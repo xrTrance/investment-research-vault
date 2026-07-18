@@ -10,3 +10,4 @@ A private equity and listed security thesis portfolio documenting structured ass
 | Date       | Ticker | Company Name | Target View | Core Catalyst Horizon | Status    |
 | :--------- | :----- | :----------- | :---------- | :-------------------- | :-------- |
 | 2026-07-18 | AAPL   | Apple Inc.   | Bullish     | M-Series Silicon / AI | Tracking  |
+| 2026-07-18 | BHP    | BHP Group Ltd| Bullish     | Infrastructure Copper | Tracking  |
