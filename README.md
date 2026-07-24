@@ -54,4 +54,5 @@ Global market/security exposures reviewed and deliberately excluded from the cur
 ## ⚖️ Disclaimer
 This repository documents personal investment research and reasoning for educational and career-development purposes only. Nothing here constitutes financial advice, a recommendation, or a solicitation to buy or sell any security. All figures, price targets, and valuations reflect a point-in-time personal view and may be outdated, incomplete, or wrong. Do your own research and consult a licensed financial adviser before making investment decisions.
 
-*Maintained by Cohen Pikari ([://github.com](https://://github.com))*
+---
+*Maintained by Cohen Pikari ([github.com/cohen-pikari](https://github.com/cohen-pikari))*
