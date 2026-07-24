@@ -7,10 +7,10 @@ A private equity and listed security thesis portfolio documenting structured ass
 
 ## 🎯 Active Performance Tracking Index
 
-| Date       | Ticker | Company Name | Target View | Core Catalyst Horizon | Status    |
+| Date | Ticker | Company Name | Entry Price | Current Price | Change | Target View | Core Catalyst Horizon | Status |
 | :--------- | :----- | :----------- | :---------- | :-------------------- | :-------- |
-| 2026-07-18 | AAPL   | Apple Inc.   | Bullish     | M-Series Silicon / AI | Tracking  |
-| 2026-07-18 | BHP    | BHP Group Ltd| Bullish     | Infrastructure Copper | Tracking  |
+| 2026-07-24 | AAPL | Apple Inc. | $333.74 | $321.66 | -3.62% | Bullish | M-Series Silicon / AI | Tracking |
+| 2026-07-24 | BHP | BHP Group Ltd | $57.54 | $58.79 | +2.17% | Bullish | Infrastructure Copper | Tracking |
 
 ## 📅 Automated Review & Checkup Schedule
 
