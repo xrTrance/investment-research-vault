@@ -1,24 +1,65 @@
-# Investment Research Vault
+nano update_readme.py
 
-A private equity and listed security thesis portfolio documenting structured asset analyses, catalyst tracking, and valuation modeling.
+nano update_readme.py
 
-## 📁 Repository Framework Layout
+nano update_readme.py
+import os
+import re
+import yfinance as yf
+from datetime import datetime
 
+def get_live_price(ticker_symbol):
+    try:
+        ticker = yf.Ticker(ticker_symbol)
+        price = ticker.fast_info['lastPrice']
+        if price is not None:
+            return round(price, 2)
+    except Exception:
+        pass
+    try:
+        ticker = yf.Ticker(ticker_symbol)
+        hist = ticker.history(period="1d")
+        if not hist.empty:
+            return round(hist['Close'].iloc[-1], 2)
+    except Exception:
+        pass
+    return None
 
-## 🎯 Active Performance Tracking Index
+def update_markdown_table():
+    readme_path = "README.md"
+    
+    if not os.path.exists(readme_path):
+        print(f"Error: Could not find README.md at current location: {os.getcwd()}")
+        return
 
-| Date | Ticker | Company Name | Entry Price | Current Price | Change | Target View | Core Catalyst Horizon | Status |
-| :--------- | :----- | :----------- | :---------- | :-------------------- | :-------- |
-| 2026-07-24 | AAPL | Apple Inc. | $321.66 | -3.62% | -3.62% | Bullish | M-Series Silicon / AI | Tracking |
-| 2026-07-24 | BHP | BHP Group Ltd | $58.82 | +2.22% | +2.17% | Bullish | Infrastructure Copper | Tracking |
+    with open(readme_path, "r", encoding="utf-8") as f:
+        content = f.read()
 
-## 📅 Automated Review & Checkup Schedule
+    aapl_live = get_live_price("AAPL")
+    bhp_live = get_live_price("BHP.AX")
+    current_date = datetime.now().strftime("%Y-%m-%d")
 
-To honor our **MANDATE.md** rules, active theses must undergo formal segment evaluation every 3 to 6 months upon the release of corporate financial reports.
+    # 1. Update the AAPL row precisely using text replacement
+    if aapl_live is not None:
+        aapl_pct = ((aapl_live - 333.74) / 333.74) * 100
+        aapl_sign = "+" if aapl_pct >= 0 else ""
+        
+        old_aapl_pattern = r"\| 2026-07-24 \| AAPL \| Apple Inc\. \| \$333\.74 \| \$XXX\.XX \| \+/-X\.X% \| Bullish \| M-Series Silicon / AI \| Tracking \|"
+        new_aapl_row = f"| {current_date} | AAPL | Apple Inc. | $333.74 | ${aapl_live:,.2f} | {aapl_sign}{aapl_pct:.2f}% | Bullish | M-Series Silicon / AI | Tracking |"
+        content = re.sub(old_aapl_pattern, new_aapl_row, content)
 
-| Ticker | Company Name | Last Review | Next Scheduled Review | Core Focus Metrics to Verify |
-| :--- | :--- | :--- | :--- | :--- |
-| **AAPL** | Apple Inc. | 2026-07-18 | **2026-10-18** (3-Month Check) | Mac & Advanced Hardware Segment Revenue Growth lines. |
-| **BHP** | BHP Group Ltd | 2026-07-18 | **2027-01-18** (6-Month Check) | Copper Segment Revenue % of EBITDA & Production Guidance. |
+    # 2. Update the BHP row precisely using text replacement
+    if bhp_live is not None:
+        bhp_pct = ((bhp_live - 57.54) / 57.54) * 100
+        bhp_sign = "+" if bhp_pct >= 0 else ""
+        
+        old_bhp_pattern = r"\| 2026-07-24 \| BHP \| BHP Group Ltd \| \$57\.54 \| \$XX\.XX \| \+/-X\.X% \| Bullish \| Infrastructure Copper \| Tracking \|"
+        new_bhp_row = f"| {current_date} | BHP | BHP Group Ltd | $57.54 | ${bhp_live:,.2f} | {bhp_sign}{bhp_pct:.2f}% | Bullish | Infrastructure Copper | Tracking |"
+        content = re.sub(old_bhp_pattern, new_bhp_row, content)
 
-*Note: If an asset breaches its -10% or -15% structural drawdown boundaries prior to these dates, an out-of-cycle emergency review memo is instantly triggered.*
+    with open(readme_path, "w", encoding="utf-8") as f:
+        f.write(content)
+    print("Successfully processed target replacements safely without changing document structure.")
+
+if __name__ == "__main__":
+    update_markdown_table()
