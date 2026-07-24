@@ -24,7 +24,7 @@ Data sources currently include company financial reports and announcements, sect
 
 ## 🎯 Active Performance Tracking Index
 
-| Date | Ticker | Company Name | Entry Price | Current Price | Change | Target View | Core Catalyst Horizon | Status |
+| Thesis Inception Date | Ticker | Company Name | Entry Price | Current Price | Change | Target View | Core Catalyst Horizon | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-07-24 | AAPL | Apple Inc. | $333.74 | $321.66 | -3.62% | Bullish | M-Series Silicon / AI | Tracking |
 | 2026-07-24 | BHP | BHP Group Ltd | $57.54 | $58.85 | +2.28% | Bullish | Infrastructure Copper | Tracking |
