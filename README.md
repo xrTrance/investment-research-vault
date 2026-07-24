@@ -7,6 +7,7 @@ A listed public equity and ETF thesis portfolio documenting structured asset ana
 * `financial_models/` — supporting models, including `financial_models/Core_ETFs/etf_universe.md`
 * `WATCHLIST.md` — active candidate tracking matrix across core and speculative positions
 * `MANDATE.md` — governance rules for thesis review cadence and drawdown triggers
+* `ARCHIVE.md` — historical record of closed positions and outcomes
 
 ## Portfolio Construction Approach
 Positions are tracked across two tiers: a 70–80% "Baseline Engine" of core, lower-volatility allocations, paired with a 20–30% high-conviction "Alpha Satellite Engine" for speculative, thesis-driven positions.
@@ -32,10 +33,10 @@ Data sources currently include company financial reports and announcements, sect
 ## 📅 Automated Review & Checkup Schedule
 Per `MANDATE.md`, active theses undergo formal segment evaluation every 3–6 months upon release of corporate financial reports.
 
-| Ticker | Company Name | Last Review | Next Scheduled Review | Core Focus Metrics to Verify |
+| Ticker | Company Name | Last Formal Review | Next Scheduled Review | Core Focus Metrics to Verify |
 | :--- | :--- | :--- | :--- | :--- |
-| AAPL | Apple Inc. | 2026-07-24 | 2026-10-18 (3-Month Check) | Mac & Advanced Hardware Segment Revenue Growth |
-| BHP | BHP Group Ltd | 2026-07-24 | 2027-01-18 (6-Month Check) | Copper Segment Revenue % of EBITDA & Production Guidance |
+| AAPL | Apple Inc. | 2026-07-18 | 2026-10-18 (3-Month Check) | Mac & Advanced Hardware Segment Revenue Growth |
+| BHP | BHP Group Ltd | 2026-07-18 | 2027-01-18 (6-Month Check) | Copper Segment Revenue % of EBITDA & Production Guidance |
 
 *Note: if an asset breaches its −10% or −15% structural drawdown boundary before its scheduled review date, an out-of-cycle emergency review memo is triggered.*
 
