@@ -27,16 +27,16 @@ Data sources currently include company financial reports and announcements, sect
 
 | Thesis Inception Date | Ticker | Company Name | Entry Price | Current Price | Change | Target View | Core Catalyst Horizon | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-07-24 | AAPL | Apple Inc. | $333.74 | $321.66 | -3.62% | Bullish | M-Series Silicon / AI | Tracking |
-| 2026-07-24 | BHP | BHP Group Ltd | $57.54 | $58.85 | +2.28% | Bullish | Infrastructure Copper | Tracking |
+| 2026-07-18 | AAPL | Apple Inc. | $333.74 | $321.66 | -3.62% | Bullish | M-Series Silicon / AI | Tracking |
+| 2026-07-18 | BHP | BHP Group Ltd | $57.54 | $58.85 | +2.28% | Bullish | Infrastructure Copper | Tracking |
 
 ## 📅 Automated Review & Checkup Schedule
 Per `MANDATE.md`, active theses undergo formal segment evaluation every 3–6 months upon release of corporate financial reports.
 
 | Ticker | Company Name | Last Formal Review | Next Scheduled Review | Core Focus Metrics to Verify |
 | :--- | :--- | :--- | :--- | :--- |
-| AAPL | Apple Inc. | 2026-07-18 | 2026-10-18 (3-Month Check) | Mac & Advanced Hardware Segment Revenue Growth |
-| BHP | BHP Group Ltd | 2026-07-18 | 2027-01-18 (6-Month Check) | Copper Segment Revenue % of EBITDA & Production Guidance |
+| AAPL | Apple Inc. | 2026-07-24 | 2026-10-18 (3-Month Check) | Mac & Advanced Hardware Segment Revenue Growth |
+| BHP | BHP Group Ltd | 2026-07-24 | 2027-01-18 (6-Month Check) | Copper Segment Revenue % of EBITDA & Production Guidance |
 
 *Note: if an asset breaches its −10% or −15% structural drawdown boundary before its scheduled review date, an out-of-cycle emergency review memo is triggered.*
 
