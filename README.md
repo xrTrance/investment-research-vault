@@ -35,8 +35,8 @@ Per `MANDATE.md`, active theses undergo formal segment evaluation every 3–6 mo
 
 | Ticker | Company Name | Last Formal Review | Next Scheduled Review | Core Focus Metrics to Verify |
 | :--- | :--- | :--- | :--- | :--- |
-| AAPL | Apple Inc. | 2026-07-24 | 2026-10-18 (3-Month Check) | Mac & Advanced Hardware Segment Revenue Growth |
-| BHP | BHP Group Ltd | 2026-07-24 | 2027-01-18 (6-Month Check) | Copper Segment Revenue % of EBITDA & Production Guidance |
+| AAPL | Apple Inc. | 2026-07-18 | 2026-10-18 (3-Month Check) | Mac & Advanced Hardware Segment Revenue Growth |
+| BHP | BHP Group Ltd | 2026-07-18 | 2027-01-18 (6-Month Check) | Copper Segment Revenue % of EBITDA & Production Guidance |
 
 *Note: if an asset breaches its −10% or −15% structural drawdown boundary before its scheduled review date, an out-of-cycle emergency review memo is triggered.*
 
